@@ -3,4 +3,23 @@
 # The target is created as a private repository on the first run. The upstream
 # and target names are independent.
 
+https://code.haverbeke.berlin/prosemirror/prosemirror.git                ocavue-mirrors/prosemirror
 https://code.haverbeke.berlin/prosemirror/prosemirror-changeset.git      ocavue-mirrors/prosemirror-changeset
+https://code.haverbeke.berlin/prosemirror/prosemirror-collab.git         ocavue-mirrors/prosemirror-collab
+https://code.haverbeke.berlin/prosemirror/prosemirror-commands.git       ocavue-mirrors/prosemirror-commands
+https://code.haverbeke.berlin/prosemirror/prosemirror-dropcursor.git     ocavue-mirrors/prosemirror-dropcursor
+https://code.haverbeke.berlin/prosemirror/prosemirror-example-setup.git  ocavue-mirrors/prosemirror-example-setup
+https://code.haverbeke.berlin/prosemirror/prosemirror-gapcursor.git      ocavue-mirrors/prosemirror-gapcursor
+https://code.haverbeke.berlin/prosemirror/prosemirror-history.git        ocavue-mirrors/prosemirror-history
+https://code.haverbeke.berlin/prosemirror/prosemirror-inputrules.git     ocavue-mirrors/prosemirror-inputrules
+https://code.haverbeke.berlin/prosemirror/prosemirror-keymap.git         ocavue-mirrors/prosemirror-keymap
+https://code.haverbeke.berlin/prosemirror/prosemirror-markdown.git       ocavue-mirrors/prosemirror-markdown
+https://code.haverbeke.berlin/prosemirror/prosemirror-menu.git           ocavue-mirrors/prosemirror-menu
+https://code.haverbeke.berlin/prosemirror/prosemirror-model.git          ocavue-mirrors/prosemirror-model
+https://code.haverbeke.berlin/prosemirror/prosemirror-schema-basic.git   ocavue-mirrors/prosemirror-schema-basic
+https://code.haverbeke.berlin/prosemirror/prosemirror-schema-list.git    ocavue-mirrors/prosemirror-schema-list
+https://code.haverbeke.berlin/prosemirror/prosemirror-search.git         ocavue-mirrors/prosemirror-search
+https://code.haverbeke.berlin/prosemirror/prosemirror-state.git          ocavue-mirrors/prosemirror-state
+https://code.haverbeke.berlin/prosemirror/prosemirror-test-builder.git   ocavue-mirrors/prosemirror-test-builder
+https://code.haverbeke.berlin/prosemirror/prosemirror-transform.git      ocavue-mirrors/prosemirror-transform
+https://code.haverbeke.berlin/prosemirror/prosemirror-view.git           ocavue-mirrors/prosemirror-view
