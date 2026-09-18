@@ -96,11 +96,11 @@ one list and one workflow step per organization.
 `GITHUB_TOKEN` cannot be used instead: it is scoped to the repository the
 workflow runs in and cannot reach another organization.
 
-The workflow also runs on every push to `main`, so a change to `mirrors.txt`
+The workflow also runs on every push to `master`, so a change to `mirrors.txt`
 takes effect immediately instead of waiting for the next scheduled run.
 
 This repository is public, but secrets are not exposed to workflows triggered by
-pull requests from forks, and this workflow runs only on `push` to `main`,
+pull requests from forks, and this workflow runs only on `push` to `master`,
 `schedule` and `workflow_dispatch`. A fork's push runs in the fork, against the
 fork's own (absent) secrets.
 

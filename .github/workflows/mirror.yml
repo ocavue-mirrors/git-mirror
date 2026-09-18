@@ -3,7 +3,7 @@ name: mirror
 on:
   push:
     branches:
-      - main
+      - master
   schedule:
     - cron: '17 3 * * *'
   workflow_dispatch:
