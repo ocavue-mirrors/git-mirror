@@ -77,10 +77,10 @@ mirror_one() {
 
 failed=0
 
-# Read the list on fd 3 so that git and gh cannot swallow it.
+# Read the list on fd 3 so that git and gh cannot swallow it. The order is
+# shuffled every run, so one repository that hangs holds up a different set of
+# the others each time instead of always the same tail of the list.
 while read -r upstream repo <&3; do
-  case "$upstream" in '' | '#'*) continue ;; esac
-
   echo "==> $upstream -> $repo"
   work="$(mktemp -d)"
 
@@ -98,7 +98,7 @@ while read -r upstream repo <&3; do
     echo "    FAILED: $repo"
     failed=$((failed + 1))
   fi
-done 3< "$LIST"
+done 3< <(sed 's/#.*//' "$LIST" | grep -v '^[[:space:]]*$' | sort -R)
 
 if [ "$failed" -ne 0 ]; then
   echo "$failed repository(ies) failed" >&2

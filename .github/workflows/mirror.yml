@@ -1,11 +1,8 @@
 name: mirror
 
 on:
-  push:
-    branches:
-      - master
   schedule:
-    - cron: '33 19 * * *'
+    - cron: '33 19 */3 * *'
   workflow_dispatch:
 
 permissions:
