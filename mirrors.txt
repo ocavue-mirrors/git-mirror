@@ -23,3 +23,5 @@ https://code.haverbeke.berlin/prosemirror/prosemirror-state.git          ocavue-
 https://code.haverbeke.berlin/prosemirror/prosemirror-test-builder.git   ocavue-mirrors/prosemirror-test-builder
 https://code.haverbeke.berlin/prosemirror/prosemirror-transform.git      ocavue-mirrors/prosemirror-transform
 https://code.haverbeke.berlin/prosemirror/prosemirror-view.git           ocavue-mirrors/prosemirror-view
+https://code.haverbeke.berlin/wordgard/wordgard.git                      ocavue-mirrors/wordgard
+https://bitbucket.org/atlassian/atlassian-frontend-mirror.git            ocavue-mirrors/atlassian-frontend-mirror
