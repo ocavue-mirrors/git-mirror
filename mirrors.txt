@@ -1,0 +1,7 @@
+# <upstream-url> <owner/repo>
+#
+# The target is created as a private repository on the first run. The upstream
+# and target names are independent.
+
+# https://gitlab.com/foo/bar.git        ocavue-mirrors/bar
+# https://git.example.com/baz/qux.git   ocavue-mirrors/qux-mirror
