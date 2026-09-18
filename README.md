@@ -85,6 +85,9 @@ tokens:
   **Administration: Read and write** (needed to create repositories),
   **Metadata: Read-only**
 
+The target owner must be an organization, since the script creates repositories
+through `POST /orgs/{org}/repos`.
+
 Add it to this repository as the secret `MIRROR_TOKEN`. The maximum lifetime is
 366 days, so it has to be regenerated once a year.
 

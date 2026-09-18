@@ -40,9 +40,15 @@ mirror_one() {
   # does not leave an empty repository behind.
   git -C "$work" fetch --quiet "$upstream" "+refs/heads/$branch:refs/upstream/head"
 
-  if ! gh repo view "$repo" >/dev/null 2>&1; then
+  # Both calls go through REST rather than `gh repo view` and `gh repo create`,
+  # which use GraphQL and are refused a fine-grained token. The REST endpoints
+  # accept one holding "Administration" repository permissions (write).
+  if ! gh api "/repos/$repo" >/dev/null 2>&1; then
     echo "    creating $repo"
-    gh repo create "$repo" --private --description "Mirror of $upstream" >/dev/null
+    gh api --method POST "/orgs/${repo%%/*}/repos" \
+      -f "name=${repo##*/}" \
+      -F private=true \
+      -f "description=Mirror of $upstream" >/dev/null
   fi
 
   # The mirror's current tip lands under refs/target/head. One object store
